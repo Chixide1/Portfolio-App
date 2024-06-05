@@ -1,0 +1,11 @@
+@use "./_variables" as *
+
+.button
+    transition: all 0.5s ease
+
+    &:hover
+        transform: translateY(-5px)
+        color: $accent-color
+
+        svg
+            stroke: currentColor
