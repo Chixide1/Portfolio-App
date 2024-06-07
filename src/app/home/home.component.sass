@@ -1,0 +1,21 @@
+@use "../../style" as *
+
+.home
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+
+    &__intro
+        margin: 0 0 30px 4px
+        color: $text-color
+
+    &__heading
+        font-size: clamp(40px, 7vw, 80px)
+        font-weight: 600
+        line-height: 1.3
+        margin-bottom: 0
+
+    &__content
+        max-width: 50ch
