@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RoughNotationModule } from 'ng-rough-notation';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RoughNotationModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.sass'
 })
