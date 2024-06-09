@@ -43,17 +43,18 @@
 
 .topnav
     position: fixed
-    top: 2%
+    max-width: 100%
+    top: 0%
     left: 0%
     right: 0%
     bottom: auto
-    z-index: 11
+    z-index: 10
     display: flex
     justify-content: space-between
     align-items: center
     margin: 0rem 0.75rem 
-    backdrop-filter: blur(10px)
-    border-radius: 12px
+    background-color: rgba($background-color, 0.8)
+    backdrop-filter: blur(7.5px)
 
     &__container
         display: flex
@@ -61,14 +62,14 @@
         align-items: center
         justify-content: space-between
         width: 100%
-        padding: 0.75rem
+        padding: 0.75rem 5.5rem
     
-    &__logo-link
-        display: flex
+    &__logo-text
+        display: inline-block
         color: $primary-color
-
-        svg g path
-            fill: currentColor
+        font-size: 25px
+        margin: 0
+        padding: 0px 30px
 
     &__items
         display: flex
@@ -76,13 +77,9 @@
         align-items: center
         justify-content: end
         margin: 0
-        width: 40%
-    
-    &__item
-        font-size: 13px
-    
+
     &__link
         padding: 0px 30px
-        font-weight: 400
+        font-weight: 500
         font-size: 1rem
         color: $secondary-color

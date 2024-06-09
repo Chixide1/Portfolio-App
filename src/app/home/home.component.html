@@ -1,7 +1,9 @@
+
 <section class="home">
+    <ngx-particles [id]="particleId" [options]="particleOptions" [className]="'home__particles'"></ngx-particles>
     <p class="home__intro">Hi, my name is</p>
     <h2 class="home__heading">Chikezie Onuoha.</h2>
-    <h2 class="home__heading home__heading--2">I like building <span [roughNotation]="{animate: true, type: 'circle', animationDelay: 1}">software.</span></h2>
+    <h2 class="home__heading home__heading--2">I like building software.</h2>
     <p class="home__content">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
         Sint beatae qui unde atque accusamus expedita, 
@@ -9,13 +11,3 @@
         rem rerum quo iste!
     </p>
 </section>
-
-<div style="padding-bottom: 20rem;"></div>
-<rough-notation-group [show]="true">
-    <div>
-       <span roughNotation>First annotation</span>
-    </div>
-    <div>
-       <span [roughNotation]="{ type: 'underline' }">Second annotation</span>
-    </div>
- </rough-notation-group>
