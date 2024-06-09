@@ -14,8 +14,8 @@ const Options: RecursivePartial<IOptions> = {
         },
         links: {
             color: "#0D0C22",
-            distance: 100,
-            enable: false,
+            distance: 25,
+            enable: true,
             opacity: 0.5,
             width: 1,
         },
@@ -33,7 +33,7 @@ const Options: RecursivePartial<IOptions> = {
             density: {
                 enable: true,
             },
-            value: 300,
+            value: 500,
         },
         opacity: {
             value: 0.2,
