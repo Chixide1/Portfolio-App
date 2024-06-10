@@ -1,16 +1,27 @@
-@use '../../styles' as *
+@use '../../style' as *
 
 .about
-    padding: 0 40px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: auto
+    padding-bottom: 20px
 
-    &__content
-        width: 50ch
-    
     &__container
         display: flex
         justify-content: space-between
 
+    
     &__picture
         width: 15rem
         height: 21rem
         border-radius: 12px
+        image-orientation: none
+
+    &__content
+        padding: 0 40px
+    
+    &__chip
+        font-family: "Montserrat" !important
+
+        
