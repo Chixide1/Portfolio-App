@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@splidejs/splide": "^4.1.4",
     "@tsparticles/angular": "^3.0.0",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/slim": "^3.4.0",
