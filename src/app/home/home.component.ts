@@ -5,7 +5,7 @@ import { Options } from "./particleOptions";
 import { Container } from '@tsparticles/engine';
 
 @Component({
-  selector: 'app-home',
+  selector: '[app-home]',
   standalone: true,
   imports: [NgxParticlesModule],
   templateUrl: './home.component.html',

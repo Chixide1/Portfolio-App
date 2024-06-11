@@ -1,0 +1,46 @@
+@use "../../style" as *
+
+:host
+    position: fixed
+    display: flex
+    max-width: 100%
+    top: 0%
+    left: 0%
+    right: 0%
+    bottom: auto
+    z-index: 10
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0rem 0.75rem 
+    background-color: rgba($background-color, 0.8)
+    backdrop-filter: blur(7.5px)
+
+.topnav
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    padding: 0.75rem 5.5rem
+    
+    &__logo-text
+        display: inline-block
+        color: $primary-color
+        font-size: 25px
+        margin: 0
+        padding: 0px 30px
+
+    &__items
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: end
+        margin: 0
+
+    &__link
+        padding: 10px 30px
+        flex: 1
+        font-weight: 500
+        font-size: 1rem
+        color: $secondary-color
