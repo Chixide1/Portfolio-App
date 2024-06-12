@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<div class="projects">
+    <div class="projects__scroller">
+        <button *ngFor="let product of products; index as i" class="projects__title" (click)="getCurrentItem(i)">
+            {{ product.name }}
+        </button>
+    </div>
+    <div class="projects__details">
+        <h2 class="projects__heading">{{ currentItem.name }}</h2>
+        <p> {{ currentItem.description }}</p>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+@use '../../style' as *
+
+.projects
+    display: grid
+    grid-template-columns: 1fr 4fr
+    gap: 1rem
+
+    &__scroller
+        display: flex
+        height: fit-content
+        flex-direction: column
+        
+        
+
+    &__title
+        background-color: $background-color
+        padding: 5px
+        font-size: small
+        border: none
+        border-left: 1px solid $tertiary-color
+
+        &:hover
+            background-color: #FFFFFF
+
+        &:focus
+            color: $accent-color
+            border-left: 2px solid $accent-color
+
+    &__heading
+        margin: 0
