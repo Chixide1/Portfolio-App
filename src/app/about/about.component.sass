@@ -1,27 +1,30 @@
 @use '../../style' as *
 
+:host
+    display: block
+    width: 80%
+    padding: 50px 0
+    margin: 0 auto
+
 .about
-    display: flex
-    flex-direction: column
-    justify-content: center
-    height: auto
-    padding-bottom: 20px
+    display: grid
+    align-items: center
+    grid-template-columns: 1fr 2fr
+    gap: 2rem
 
-    &__container
-        display: flex
-        justify-content: space-between
-
-    
     &__picture
-        width: 15rem
-        height: 21rem
+        display: block
+        width: 100%
+        height: auto
         border-radius: 12px
-        image-orientation: none
 
     &__content
-        padding: 0 40px
-    
-    &__chip
-        font-family: "Montserrat" !important
+        min-height: 100%
+     
+@media(width <= $breakpoint)
+    .about
+        grid-template-columns: 1fr
 
-        
+        &__picture
+            width: 50%
+            margin: auto
