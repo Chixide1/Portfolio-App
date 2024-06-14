@@ -2,10 +2,9 @@
     <div class="topnav__logo">
         <p class="topnav__logo-text gwendolyn">CK</p>
     </div>
-    <nav class="topnav__items">
-        <a href="#Home" class="topnav__link button button--topnav">Home</a>
-        <a href="#About" class="topnav__link button button--topnav">About</a>
-        <a href="#Projects" class="topnav__link button button--topnav">Projects</a>
+    <nav class="topnav__items" *ngIf="ScreenWidth > 768">
+        <a pageScroll [pageScrollDuration]="500" href="#home" class="topnav__link button button--topnav">Home</a>
+        <a pageScroll [pageScrollDuration]="500" href="#about" class="topnav__link button button--topnav">About</a>
+        <a pageScroll [pageScrollDuration]="250" href="#projects" class="topnav__link button button--topnav">Projects</a>
     </nav>
 </div>
-

@@ -7,24 +7,46 @@
 
     &__scroller
         display: flex
-        height: fit-content
-        flex-direction: column
-        
-        
+        flex-direction: column       
 
-    &__title
+    &__button
+        position: relative
         background-color: $background-color
         padding: 5px
         font-size: small
         border: none
-        border-left: 1px solid $tertiary-color
+
+        &::before
+            top: 0
+            left: 0
+            height: 100%
+            width: 2px
+            background-color: $accent-color
+            content: ''
+            position: absolute
+            transform: scale(0)
+            transition: transform 2s ease
 
         &:hover
-            background-color: #FFFFFF
+            background-color: $quaternary-color
 
-        &:focus
-            color: $accent-color
-            border-left: 2px solid $accent-color
+    &__button--active
+        color: $accent-color
+
+        &::before
+            top: 0
+            left: 0
+            height: 100%
+            width: 2px
+            background-color: $accent-color
+            content: ''
+            position: absolute
+            transform: scale(1)
+            
+                    
+
+    &__details
+        min-height: 10rem        
 
     &__heading
         margin: 0

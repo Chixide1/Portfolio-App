@@ -1,6 +1,9 @@
+<h2 class="section-heading">Projects</h2>
 <div class="projects">
     <div class="projects__scroller">
-        <button *ngFor="let product of products; index as i" class="projects__title" (click)="getCurrentItem(i)">
+        <button *ngFor="let product of products"
+        class="projects__button" (click)="getCurrentItem(product.name)"
+        [class.projects__button--active]="product.name == selected">
             {{ product.name }}
         </button>
     </div>
