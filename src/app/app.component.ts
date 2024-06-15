@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +12,17 @@ import { ProjectsComponent } from './projects/projects.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Portfolio-App';
+
+  public screenWidth: number = 0;
+
+  ngOnInit() {
+    this.screenWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.screenWidth = window.innerWidth;
+  }
 }

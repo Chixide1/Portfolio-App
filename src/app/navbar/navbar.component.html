@@ -2,9 +2,39 @@
     <div class="topnav__logo">
         <p class="topnav__logo-text gwendolyn">CK</p>
     </div>
-    <nav class="topnav__items" *ngIf="ScreenWidth > 768">
-        <a pageScroll [pageScrollDuration]="500" href="#home" class="topnav__link button button--topnav">Home</a>
-        <a pageScroll [pageScrollDuration]="500" href="#about" class="topnav__link button button--topnav">About</a>
-        <a pageScroll [pageScrollDuration]="250" href="#projects" class="topnav__link button button--topnav">Projects</a>
+
+    <nav class="topnav__items" *ngIf="screenWidth >= 768; else mobile">
+        <a pageScroll [pageScrollDuration]="500" href="#home" class="topnav__link button button--topnav">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </a>
+        <a pageScroll [pageScrollDuration]="500" href="#about" class="topnav__link button button--topnav">
+            <mat-icon>person</mat-icon>
+            <span>About</span>
+        </a>
+        <a pageScroll [pageScrollDuration]="250" href="#projects" class="topnav__link button button--topnav">
+            <mat-icon>handyman</mat-icon>
+            <span>Projects</span>
+        </a>
     </nav>
+
+    <ng-template #mobile>
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="mobile-menu__icon">
+            <mat-icon fontIcon="menu"></mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="mobile-menu">
+            <button mat-menu-item  pageScroll [pageScrollDuration]="500" href="#home" class="mobile-menu__option">
+                    <mat-icon>home</mat-icon>
+                    <span>Home</span>
+            </button>
+            <button mat-menu-item pageScroll [pageScrollDuration]="500" href="#about" class="mobile-menu__option">
+                <mat-icon>person</mat-icon>
+                <span>About</span>
+            </button>
+            <button mat-menu-item  pageScroll [pageScrollDuration]="500" href="#projects" class="mobile-menu__option">
+                <mat-icon>handyman</mat-icon>
+                <span>Projects</span>
+            </button>
+          </mat-menu>
+    </ng-template>
 </div>

@@ -40,6 +40,9 @@
 
     &__link
         position: relative
+        display: flex
+        align-items: center
+        gap: 0.5rem
         padding: 10px 30px
         flex: 1
         font-weight: 500
@@ -61,8 +64,6 @@
 
         &:hover::after    
             transform: scale(1)
-    
-
 
 @media (width <= $breakpoint)
     .topnav
@@ -70,6 +71,13 @@
 
         &__logo-text
             padding: 10px
-        
-        // &__items
-        //     display: none
+
+.mobile-menu
+    background-color: $quaternary-color
+
+    &__icon
+        background-color: $background-color
+        border: none
+
+    &__option
+        background-color: $quaternary-color
