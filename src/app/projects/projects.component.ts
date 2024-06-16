@@ -1,27 +1,35 @@
 import { Component } from '@angular/core';
-import { Product, products } from "./product";
-import { NgFor,NgClass } from '@angular/common';
+import { NgFor } from '@angular/common';
+import data from './projects.json';
 
 @Component({
   selector: '[app-projects]',
   standalone: true,
-  imports: [NgFor, NgClass],
+  imports: [NgFor],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.sass'
 })
 export class ProjectsComponent {
-  products: Product[] = products
-  currentItem: Product
+  projects: Project[] = data
+  currentItem: Project
   selected: any
 
   constructor(){
-    this.currentItem = products[0]
+    this.currentItem = this.projects[0]
     this.selected = this.currentItem.name
   }
 
   getCurrentItem = (name: string) => {
-    const index = products.findIndex(i => i.name == name)
-    this.currentItem = products[index]
+    const index = this.projects.findIndex(i => i.name == name)
+    this.currentItem = this.projects[index]
     this.selected = this.currentItem.name
   }
+}
+
+type Project = {
+  name: string,
+  description: string,
+  img: string,
+  github: string
+  tags: string[]
 }

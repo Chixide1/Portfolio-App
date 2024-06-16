@@ -4,12 +4,13 @@
     display: grid
     align-items: center
     grid-template-columns: 1fr 2fr
-    gap: 2rem
 
     &__picture
         display: block
         width: 100%
         height: auto
+        max-width: 70%
+        margin: auto
         border-radius: 12px
 
     &__content
@@ -18,7 +19,12 @@
 @media(width <= $breakpoint)
     .about
         grid-template-columns: 1fr
+        gap: 2rem
+        margin: auto
 
         &__picture
-            width: 50%
+            max-width: 40%
+            margin: auto
+        
+        &__content
             margin: auto
