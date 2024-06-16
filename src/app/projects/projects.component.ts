@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import {MatGridListModule} from '@angular/material/grid-list';
 import data from './projects.json';
 
 @Component({
   selector: '[app-projects]',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, MatGridListModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.sass'
 })
