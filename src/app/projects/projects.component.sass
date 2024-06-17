@@ -30,29 +30,68 @@
         &:hover
             background-color: $quaternary-color
 
-    &__button--active
-        color: $accent-color
+        &--active
+            color: $accent-color
 
-        &::before
-            top: 0
-            left: 0
-            height: 100%
-            width: 2px
-            background-color: $accent-color
-            content: ''
-            position: absolute
-            transform: scale(1)
-    
-    &__img
-        display: block
-        max-width: 500px
-        border-radius: 40px
-        margin: 2rem auto auto
-            
-                    
+            &::before
+                top: 0
+                left: 0
+                height: 100%
+                width: 2px
+                background-color: $accent-color
+                content: ''
+                position: absolute
+                transform: scale(1)
 
     &__details
         min-height: 10rem        
 
     &__heading
         margin: 0
+
+    &__img-box
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 0.3fr
+        grid-template-rows: auto
+        grid-template-areas: "image image image ." "image image image links" "image image image ." "tags tags tags ."
+        
+    &__img
+        grid-area: image
+        display: block
+        // max-width: 500px
+        border-radius: 30px
+        margin: 2rem auto auto
+    
+    &__links
+        grid-area: links
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        gap: 20px
+    
+    &__link
+        width: fit-content
+        display: inline
+        margin-left: 20px
+
+        &--disabled
+            cursor: default
+            pointer-events: none
+            opacity: .38
+            
+    
+    &__tags
+        margin: 15px 0 10px 
+        grid-area: tags
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        font-size: smaller
+        color: $accent-color
+    
+    &__tag
+        margin: 0
+        padding: 0 10px
+        display: inline
+        font-weight: 650

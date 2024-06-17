@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
-import {MatGridListModule} from '@angular/material/grid-list';
 import data from './projects.json';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: '[app-projects]',
   standalone: true,
-  imports: [NgFor, MatGridListModule],
+  imports: [NgFor, RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.sass'
 })
@@ -32,5 +32,6 @@ type Project = {
   description: string,
   img: string,
   github: string
+  live: string
   tags: string[]
 }
