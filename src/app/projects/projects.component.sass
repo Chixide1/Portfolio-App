@@ -3,35 +3,32 @@
 .projects
     max-width: 100%
 
-    &__tab
-        display: none
-        background-color: $accent-color !important
-        margin: 10rem
-
     &__details
-        min-height: 10rem        
-
-    &__heading
-        margin: 0
+        margin-top: 2rem
+        display: flex
+        justify-content: space-between
+        
+    &__content     
+        min-width: 45%
+        max-width: 45%
 
     &__img-box
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr 0.3fr
-        grid-template-rows: auto
-        grid-template-areas: "image image image ." "image image image links" "image image image ." "tags tags tags ."
+        min-width: 45%
+        max-width: 45%
         
     &__img
         grid-area: image
         display: block
         border-radius: 30px
-        margin: 2rem auto auto
+        // margin: 2rem auto auto
     
-    &__links
-        grid-area: links
+    &__heading
+        margin: 0
+
+    &__link-group
+        margin-top: 15px
         display: flex
-        flex-direction: column
         justify-content: center
-        align-content: center
         gap: 20px
     
     &__link
@@ -45,17 +42,26 @@
             opacity: .38
             
     
-    &__tags
-        margin: 15px 0 10px 
-        grid-area: tags
+    &__tag-group
+        padding: 0
         display: flex
         flex-wrap: wrap
-        justify-content: center
+        justify-content: flex-start
         font-size: smaller
         color: $accent-color
     
     &__tag
         margin: 0
-        padding: 0 10px
+        padding: 0 10px 0 0
         display: inline
         font-weight: 650
+
+@media (width <= $breakpoint)
+    .projects
+        
+        &__details
+            flex-direction: column
+            gap: 1rem
+        
+        &__img
+            margin: 0
