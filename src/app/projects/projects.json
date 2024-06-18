@@ -8,5 +8,25 @@
         "tags": [
             "HTML", "Bootstrap", "Python", "Django", "Azure", "Terraform"
         ]
+    },
+    {
+        "name": "Fileshare",
+        "description": "This is a test please dont take serious i am writing rubbish",
+        "img": "assets/images/fileshare webapp.png",
+        "github": "https://github.com/Chixide1/Fileshare-Webapp",
+        "live": "",
+        "tags": [
+            "HTML", "Bootstrap", "Python", "Django", "Azure", "Terraform"
+        ]
+    },
+    {
+        "name": "Webapp",
+        "description": "Built a file sharing web app using Azure. Terraform was used to build the resources within Azure. Users can upload files with Blob Storage as the backend & generate time-limited download links for sharing. Django & Python handle the frontend & backend. The UI is built with Bootstrap, CSS & HTML. Leverages Azure Key Vault for secrets & Log Analytics for monitoring.",
+        "img": "assets/images/fileshare webapp.png",
+        "github": "https://github.com/Chixide1/Fileshare-Webapp",
+        "live": "",
+        "tags": [
+            "HTML", "Bootstrap", "Python", "Django", "Azure", "Terraform"
+        ]
     }
 ]
