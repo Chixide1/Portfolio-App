@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import data from './projects.json';
 import { RouterLink } from '@angular/router';
-import {MatTabsConfig, MatTabsModule} from '@angular/material/tabs';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatChipsModule} from '@angular/material/chips';
 
 @Component({
   selector: '[app-projects]',
   standalone: true,
-  imports: [NgFor, RouterLink, MatTabsModule],
+  imports: [NgFor, RouterLink, MatTabsModule, MatChipsModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.sass'
 })

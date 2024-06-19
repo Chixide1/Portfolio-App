@@ -18,7 +18,7 @@
 
 body
     font-family: "Montserrat"
-    font-size: 15px
+    font-size: clamp(0.95rem, 1vw + 0.2rem, 2rem)
     margin: 0
     background-color: $background-color
     color: $primary-color
@@ -44,9 +44,9 @@ body
 
 .mdc-evolution-chip__text-label
     font-family: Montserrat !important
-    font-size: smaller !important
+    font-size: 12px !important
 
-.mat-mdc-standard-chip .mdc-evolution-chip__action--primary
+.mat-mdc-standard-chip
     padding: 0 7.5px !important
 
 .mdc-tab__text-label
@@ -54,3 +54,7 @@ body
 
 .mat-mdc-tab-label-container
     border-bottom-style: none !important
+
+.mdc-evolution-chip-set .mdc-evolution-chip
+    width: fit-content
+    height: 25px
