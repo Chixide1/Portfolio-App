@@ -71,7 +71,7 @@
     transform: translateX(0)
     opacity: 1
 
-@for $i from 1 through 100
+@for $i from 1 through 10
     .visible > *:nth-child(#{$i})
-        animation: slidein 1s ease-in-out forwards
+        animation: slidein 0.3s ease-in-out forwards
         animation-delay: calc(0.2s * ($i)) /* Applies delay based on loop iteration */

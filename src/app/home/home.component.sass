@@ -58,15 +58,24 @@
 @keyframes riseup
   from
     transform: translateY(40%) /* Adjust based on list height */
-    opacity: 0
 
   to 
     transform: translateY(0)
     opacity: 1
 
 
-@for $i from 1 through 100
+@for $i from 1 through 10
     .home > *:nth-child(#{$i}) 
         opacity: 0
-        animation: riseup 1s ease-in-out forwards
+        animation: riseup 1s ease forwards
         animation-delay: calc(0.2s * ($i + 2)) /* Applies delay based on loop iteration */
+
+@keyframes appear
+
+    100%
+        opacity: 1
+
+.home__particles
+    opacity: 0
+    animation: appear 1s ease forwards
+    animation-delay: 1.5s
