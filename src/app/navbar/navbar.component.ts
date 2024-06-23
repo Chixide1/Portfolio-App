@@ -1,16 +1,21 @@
-import { NgIf } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgIf, ViewportScroller} from '@angular/common';
+import { Component, Input} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: '[app-navbar]',
   standalone: true,
-  imports: [NgxPageScrollModule, NgIf, MatIconModule, MatMenuModule],
+  imports: [NgIf, MatIconModule, MatMenuModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.sass'
 })
 export class NavbarComponent{
   @Input() screenWidth: number = 0
+
+  constructor(private readonly scroller: ViewportScroller){}
+
+  scroll(id: string) {
+    this.scroller.scrollToAnchor(id)
+  }
 }
