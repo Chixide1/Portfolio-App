@@ -83,3 +83,31 @@
 
     &__option
         background-color: $quaternary-color
+
+//animations
+@keyframes dropdown
+  from
+    transform: translateY(-40%) /* Adjust based on list height */
+    opacity: 0
+
+  to 
+    transform: translateY(0)
+    opacity: 1
+
+
+@for $i from 1 through 100
+    .topnav__items a:nth-child(#{$i}) 
+        opacity: 0
+        animation: dropdown 1s ease-in-out forwards
+        animation-delay: calc(0.2s * ($i - 1)) /* Applies delay based on loop iteration */
+
+@keyframes fadein
+  from
+    opacity: 0
+
+  to 
+    opacity: 1
+
+.topnav__logo-text
+    opacity: 0
+    animation: fadein 1s ease forwards

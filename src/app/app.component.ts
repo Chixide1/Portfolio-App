@@ -5,11 +5,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { ObserveDirective } from '../directives/observer'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HomeComponent, AboutComponent, ProjectsComponent, FooterComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent, AboutComponent, ProjectsComponent, FooterComponent, ObserveDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
