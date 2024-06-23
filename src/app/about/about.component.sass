@@ -37,7 +37,7 @@
             margin: auto
 
 // Background Animation
-.slider-thumb
+.blob
     position: absolute
     bottom: 0
     right: 0
@@ -45,15 +45,14 @@
     height: 60%
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%
     will-change: border-radius, transform, opacity
-    animation: sliderShape 5s linear infinite
     display: block
     z-index: -10
     background-image: linear-gradient(45deg, #FFCC70 0%, #FF5A96 25%, #4158D0 50%, #00A279 75%, #C850C0 100%)
     background-size: 400%
-    animation: sliderShape 5s linear infinite, bg-change 20s infinite alternate
+    animation: wiggle 5s linear infinite, color-change 20s infinite alternate
     opacity: 0.3
 
-@keyframes sliderShape
+@keyframes wiggle
     0%,100%
         border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%
         transform: translate3d(0,0,0) rotateZ(0.01deg)
@@ -69,7 +68,7 @@
         border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% 
         transform: translate3d(0,-3px,0) rotateZ(0.01deg)
   
-@keyframes bg-change
+@keyframes color-change
     0%
        background-position: left 
 

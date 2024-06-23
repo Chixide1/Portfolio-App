@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 import {MatChipsModule} from '@angular/material/chips';
 
 @Component({
@@ -9,5 +9,10 @@ import {MatChipsModule} from '@angular/material/chips';
   styleUrl: './about.component.sass'
 })
 export class AboutComponent {
+  public scrolled: boolean = false
 
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    this.scrolled = window.scrollY > 0;
+  }
 }
