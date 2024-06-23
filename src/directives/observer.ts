@@ -7,7 +7,6 @@ import {
     Output,
     EventEmitter,
   } from '@angular/core';
-  import { Subject } from 'rxjs';
   
   @Directive({
     selector: '[observe]',
@@ -31,12 +30,6 @@ import {
       this.isVisible.emit();
     }
   
-    removeClassName(className: string) {
-      if (this.element.nativeElement.classList.contains(className)) {
-        this.renderer.removeClass(this.element.nativeElement, className);
-      }
-    }
-  
     createObserver() {
       const options = {
         threshold: [this.thresholdMin, this.thresholdMax],
@@ -47,8 +40,6 @@ import {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               this.addClassName('visible');
-            } else {
-              this.removeClassName('visible');
             }
           });
       };

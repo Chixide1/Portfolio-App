@@ -15,15 +15,6 @@
     &:hover
         transform: none
 
-.section-box
-    display: block
-    width: 100%
-    padding: 50px 0
-    margin: 0 auto
-    min-height: 50vh
-    min-height: 50dvh
-    align-content: center
-
 .section-heading
     $divider-length: 70%
 
@@ -57,4 +48,30 @@
         
         &::after
             display: none
-    
+
+.section-box
+    display: block
+    width: 100%
+    padding: 50px 0
+    margin: 0 auto
+    min-height: 50vh
+    min-height: 50dvh
+    align-content: center
+
+    & > *
+        opacity: 0
+
+//animations
+@keyframes slidein
+  from
+    transform: translateY(20%) /* Adjust based on list height */
+    opacity: 0
+
+  to 
+    transform: translateX(0)
+    opacity: 1
+
+@for $i from 1 through 100
+    .visible > *:nth-child(#{$i})
+        animation: slidein 1s ease-in-out forwards
+        animation-delay: calc(0.2s * ($i)) /* Applies delay based on loop iteration */
