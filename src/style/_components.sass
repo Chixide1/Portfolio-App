@@ -34,20 +34,6 @@
         width: $divider-length
         height: 1px
         background-color: $tertiary-color
-    
-    &--right
-        justify-content: end
-
-        &::before
-            display: block
-            margin-right: 20px
-            content: ''
-            width: $divider-length
-            height: 1px
-            background-color: $tertiary-color
-        
-        &::after
-            display: none
 
 .section-box
     display: block
@@ -75,3 +61,13 @@
     .visible > *:nth-child(#{$i})
         animation: slidein 0.3s ease-in-out forwards
         animation-delay: calc(0.2s * ($i)) /* Applies delay based on loop iteration */
+
+@keyframes growline
+    to
+        transform: scaleX(1)    
+
+.visible .section-heading::after
+    transform: scaleX(0)
+    transform-origin: left
+    animation: growline 1.5s ease forwards !important
+    animation-delay: 0.5s !important
