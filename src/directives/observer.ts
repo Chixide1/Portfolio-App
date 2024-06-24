@@ -15,11 +15,10 @@ import {
   export class ObserveDirective implements OnInit {
     @Input() thresholdMax = 0.8;
     @Input() thresholdMin = 0.4;
+    @Input() className = 'visible';
     @Output() isVisible = new EventEmitter<string>();
   
     constructor(private element: ElementRef, private renderer: Renderer2) {}
-  
-    //TODO: possibly implement debouncing
   
     ngOnInit() {
       this.createObserver();
@@ -39,7 +38,7 @@ import {
         entries &&
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              this.addClassName('visible');
+              this.addClassName(this.className);
             }
           });
       };
