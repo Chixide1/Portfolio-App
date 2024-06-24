@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.0.0",
     "@angular/cdk": "^18.0.1",
     "@angular/common": "^18.0.0",
     "@angular/compiler": "^18.0.0",
@@ -23,7 +22,6 @@
     "@tsparticles/angular": "^3.0.0",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/slim": "^3.4.0",
-    "ngx-page-scroll-demo": "github:Nolanus/ngx-page-scroll",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "web-particles": "^2.9.3",
