@@ -4,7 +4,7 @@
         "description": "My portfolio showcases my coding projects and the technologies I have utilised. It also highlights some of my skills and experience.",
         "img": "assets/images/portfolio-app.png",
         "github": "https://github.com/Chixide1/Portfolio-App",
-        "live": "",
+        "live": "https://chikdoestech.xyz",
         "tags": [
             "Typescript", "Angular", "Sass"
         ]
