@@ -37,7 +37,7 @@
         align-items: center
         justify-content: end
         margin: 0
-
+        
     &__link
         position: relative
         display: flex
@@ -61,11 +61,11 @@
             transform-origin: center
             transition: transform 1s ease
 
-        &:hover
-            color: $accent-color
+    &__link:hover
+        color: $accent-color
 
-            &::after    
-                transform: scale(1)
+        &::after    
+            transform: scale(1)
 
 @media (width <= $breakpoint)
     .topnav
@@ -78,7 +78,7 @@
     background-color: rgba($quaternary-color, 0.7)
 
     &__icon
-        background-color: $background-color
+        background-color: rgba($background-color, 0.7)
         border: none
 
     &__option
