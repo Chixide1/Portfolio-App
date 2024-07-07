@@ -3,6 +3,8 @@
         <p class="topnav__logo-text gwendolyn">CK</p>
     </div>
 
+    <div class="topnav__vr" *ngIf="screenWidth <= 768"></div>
+
     <nav class="topnav__items" *ngIf="screenWidth >= 768; else mobile">
         <a href="#home" class="topnav__link">
             <mat-icon>home</mat-icon>
