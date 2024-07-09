@@ -14,7 +14,7 @@
         "description": "This web application allows users to upload files and generate temporary download links for easy sharing utilising Azure for storage.",
         "img": "assets/images/fileshare-app.png",
         "github": "https://github.com/Chixide1/Fileshare-Webapp",
-        "live": "",
+        "live": "https://chik-fileshare-webapp.azurewebsites.net",
         "tags": [
             "Bootstrap", "Python", "Django", "Azure", "Terraform"
         ]
