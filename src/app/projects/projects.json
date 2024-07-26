@@ -1,5 +1,15 @@
 [
     {
+        "name": "Cloudstore",
+        "description": "The Fileshare App v2 (Now named Cloudstore) is an enhanced version of the original cloud storage platform I developed. This iteration features a significantly improved user interface and expanded functionality.",
+        "img": "assets/images/cloudstore.png",
+        "github": "https://github.com/Chixide1/Cloudstore",
+        "live": "https://cloudstore.chikdoestech.xyz",
+        "tags": [
+            "Python" ,"Django", "Sass", "HTMX"
+        ]
+    },
+    {
         "name": "Portfolio App",
         "description": "My portfolio showcases my coding projects and the technologies I have utilised. It also highlights some of my skills and experience.",
         "img": "assets/images/portfolio-app.png",
