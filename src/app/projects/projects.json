@@ -1,7 +1,7 @@
 [
     {
         "name": "Cloudstore",
-        "description": "The Fileshare App v2 (Now named Cloudstore) is an enhanced version of the original cloud storage platform I developed. This iteration features a significantly improved user interface and expanded functionality.",
+        "description": "The Fileshare App v2 (now named Cloudstore) is an enhanced version of the original cloud storage platform I developed. This iteration features a significantly improved user interface and expanded functionality.",
         "img": "assets/images/cloudstore.png",
         "github": "https://github.com/Chixide1/Cloudstore",
         "live": "https://cloudstore.chikdoestech.xyz",
