@@ -1,4 +1,4 @@
-import { NgIf, ViewportScroller} from '@angular/common';
+import { NgIf} from '@angular/common';
 import { Component, Input} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -12,10 +12,4 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 export class NavbarComponent{
   @Input() screenWidth: number = 0
-
-  constructor(private readonly scroller: ViewportScroller){}
-
-  scroll(id: string) {
-    this.scroller.scrollToAnchor(id)
-  }
 }
