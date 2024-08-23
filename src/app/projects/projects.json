@@ -1,7 +1,17 @@
 [
     {
+        "name": "Blog App",
+        "description": "This blog application was inspired by the Prismic Blog and developed primarily to learn Next.js while creating a practical and functional project. I populated it with mock data to showcase its features.",
+        "img": "assets/images/blog.png",
+        "github": "https://github.com/Chixide1/blog-app",
+        "live": "https://blog.chikdoestech.xyz/",
+        "tags": [
+            "Next JS", "Javascript", "Typescript", "Pocketbase", "React"
+        ]
+    },
+    {
         "name": "Cloudstore",
-        "description": "The Fileshare App v2 (now named Cloudstore) is an enhanced version of the original cloud storage platform I developed. This iteration features a significantly improved user interface and expanded functionality.",
+        "description": "This web application allows users to upload files and generate temporary download links for easy sharing utilising Azure for storage. This version of the Fileshare App v2 (now named Cloudstore) is an enhanced version of the original cloud storage platform I made. This iteration features a significantly improved user interface and expanded functionality.",
         "img": "assets/images/cloudstore.png",
         "github": "https://github.com/Chixide1/Cloudstore",
         "live": "https://cloudstore.chikdoestech.xyz",
@@ -17,16 +27,6 @@
         "live": "",
         "tags": [
             "Typescript", "Angular", "Sass"
-        ]
-    },
-    {
-        "name": "Fileshare App",
-        "description": "This web application allows users to upload files and generate temporary download links for easy sharing utilising Azure for storage.",
-        "img": "assets/images/fileshare-app.png",
-        "github": "https://github.com/Chixide1/Fileshare-Webapp",
-        "live": "https://chik-fileshare-webapp.azurewebsites.net",
-        "tags": [
-            "Bootstrap", "Python", "Django", "Azure", "Terraform"
         ]
     }
 ]
