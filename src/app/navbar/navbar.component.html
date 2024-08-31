@@ -25,15 +25,15 @@
             <mat-icon fontIcon="menu"></mat-icon>
         </button>
         <mat-menu #menu="matMenu" class="mobile-menu">
-            <a mat-menu-item href="#home" class="mobile-menu__option">
+            <a mat-menu-item href="#home" class="mobile-menu__option" [class.active]="active === 'home'">
                 <mat-icon>home</mat-icon>
                 <span>Home</span>
             </a>
-            <a mat-menu-item href="#about" class="mobile-menu__option">
+            <a mat-menu-item href="#about" class="mobile-menu__option" [class.active]="active === 'about'">
                 <mat-icon>person</mat-icon>
                 <span>About</span>
             </a>
-            <a mat-menu-item href="#projects" class="mobile-menu__option">
+            <a mat-menu-item href="#projects" class="mobile-menu__option" [class.active]="active === 'projects'">
                 <mat-icon>handyman</mat-icon>
                 <span>Projects</span>
             </a>
