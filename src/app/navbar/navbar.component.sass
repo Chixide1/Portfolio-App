@@ -16,6 +16,9 @@
     background-color: rgba($background-color, 0.8)
     backdrop-filter: blur(5px)
 
+.active
+    color: $accent-color !important
+
 .topnav
     display: flex
     flex-direction: row
@@ -53,24 +56,21 @@
         font-weight: 500
         font-size: 1rem
         color: $secondary-color
-        transition: color 1.5s ease
+        transition: color 0.5s ease
 
-        &::after
-            content: ''
-            position: absolute
-            bottom: 0
-            width: 70%
-            height: 2px
-            background-color: $accent-color
-            transform: scale(0)
-            transform-origin: center
-            transition: transform 1s ease
+    &__link::after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 70%
+        height: 2px
+        background-color: $accent-color
+        transform: scale(0)
+        transform-origin: center
+        transition: transform 1s ease
 
-    &__link:hover
-        color: $accent-color
-
-        &::after    
-            transform: scale(1)
+    &__link:hover::after    
+        transform: scale(1)
 
 @media (width <= $breakpoint)
     :host

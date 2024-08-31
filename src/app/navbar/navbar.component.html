@@ -6,15 +6,15 @@
     <div class="topnav__vr" *ngIf="screenWidth <= 768"></div>
 
     <nav class="topnav__items" *ngIf="screenWidth >= 768; else mobile">
-        <a href="#home" class="topnav__link">
+        <a href="#home" class="topnav__link" [class.active]="active === 'home'">
             <mat-icon>home</mat-icon>
             <span>Home</span>
         </a>
-        <a href="#about" class="topnav__link">
+        <a href="#about" class="topnav__link" [class.active]="active === 'about'">
             <mat-icon>person</mat-icon>
             <span>About</span>
         </a>
-        <a href="#projects" class="topnav__link">
+        <a href="#projects" class="topnav__link" [class.active]="active === 'projects'">
             <mat-icon>handyman</mat-icon>
             <span>Projects</span>
         </a>

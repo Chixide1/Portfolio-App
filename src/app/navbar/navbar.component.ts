@@ -12,4 +12,5 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 export class NavbarComponent{
   @Input() screenWidth: number = 0
+  @Input() active: string = ''
 }

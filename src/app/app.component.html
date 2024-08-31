@@ -1,7 +1,7 @@
-<header app-navbar [screenWidth]="screenWidth"></header>
+<header app-navbar [active]="active" [screenWidth]="screenWidth"></header>
 <main class="content">
-    <section app-home id="home"></section>
-    <section app-about class="section-box" id="about" observe></section>
-    <section app-projects class="section-box" id="projects" observe></section>
+    <section app-home id="home" observe (isVisible)="setActive($event)"></section>
+    <section app-about class="section-box" id="about" observe (isVisible)="setActive($event)"></section>
+    <section app-projects class="section-box" id="projects" observe (isVisible)="setActive($event)"></section>
 </main>
 <footer app-footer></footer>

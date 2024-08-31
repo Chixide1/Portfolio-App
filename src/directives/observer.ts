@@ -27,7 +27,7 @@ import {
     // Class name to add
     addClassName(className: string) {
       this.renderer.addClass(this.element.nativeElement, className);
-      this.isVisible.emit();
+      this.isVisible.emit(this.element.nativeElement.id);
     }
   
     createObserver() {

@@ -15,7 +15,9 @@ import { ObserveDirective } from '../directives/observer'
   styleUrl: './app.component.sass'
 })
 export class AppComponent implements OnInit{
+  public title: string = 'Chikezie Onuoha || Portfolio'
   public screenWidth: number = 0;
+  public active: string = ''
 
   ngOnInit() {
     this.screenWidth = window.innerWidth;
@@ -24,5 +26,9 @@ export class AppComponent implements OnInit{
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.screenWidth = window.innerWidth;
+  }
+
+  setActive(id: string){
+    this.active = id
   }
 }
