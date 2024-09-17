@@ -6,7 +6,7 @@
         "github": "https://github.com/Chixide1/blog-app",
         "live": "https://blog.chikdoestech.xyz/",
         "tags": [
-            "Next JS", "Javascript", "Typescript", "Pocketbase", "React"
+            "Next.js", "Javascript", "Typescript", "Pocketbase", "React"
         ]
     },
     {
@@ -16,7 +16,7 @@
         "github": "https://github.com/Chixide1/Cloudstore",
         "live": "https://cloudstore.chikdoestech.xyz",
         "tags": [
-            "Python" ,"Django", "Sass", "Htmx"
+            "Python" ,"Django", "Sass", "Htmx", "Bootstrap", "Hyperscript"
         ]
     },
     {
@@ -26,7 +26,7 @@
         "github": "https://github.com/Chixide1/Portfolio-App",
         "live": "",
         "tags": [
-            "Typescript", "Angular", "Sass"
+            "Typescript", "Angular", "Sass", "Javascript", "Angular Material"
         ]
     }
 ]
