@@ -4,7 +4,7 @@
         "description": "This blog application was inspired by the Prismic Blog and developed primarily to learn Next.js while creating a practical and functional project. I populated it with mock data to showcase its features.",
         "img": "assets/images/blog.png",
         "github": "https://github.com/Chixide1/blog-app",
-        "live": "https://blog.chikdoestech.xyz/",
+        "live": "https://blog.ckdoestech.com/",
         "tags": [
             "Next.js", "Javascript", "Typescript", "Pocketbase", "React"
         ]
@@ -14,7 +14,7 @@
         "description": "This web application allows users to upload files and generate temporary download links for easy sharing utilising Azure for storage. This version of the Fileshare App v2 (now named Cloudstore) is an enhanced version of the original cloud storage platform I made. This iteration features a significantly improved user interface and expanded functionality.",
         "img": "assets/images/cloudstore.png",
         "github": "https://github.com/Chixide1/Cloudstore",
-        "live": "https://cloudstore.chikdoestech.xyz",
+        "live": "https://cloudstore.ckdoestech.com",
         "tags": [
             "Python" ,"Django", "Sass", "Htmx", "Bootstrap", "Hyperscript"
         ]
