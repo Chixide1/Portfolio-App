@@ -1,12 +1,12 @@
 [
     {
-        "name": "Blog App",
+        "name": "Techtonic",
         "description": "This blog application was inspired by the Prismic Blog and developed primarily to learn Next.js while creating a practical and functional project. I populated it with mock data to showcase its features.",
         "img": "assets/images/blog.png",
-        "github": "https://github.com/Chixide1/blog-app",
-        "live": "https://blog.ckdoestech.com/",
+        "github": "https://github.com/Chixide1/techtonic",
+        "live": "https://techtonic.ckdoestech.com/",
         "tags": [
-            "Next.js", "Javascript", "Typescript", "Pocketbase", "React"
+            "Next.js", "Javascript", "Typescript", "Pocketbase", "React", "PayloadCMS"
         ]
     },
     {
