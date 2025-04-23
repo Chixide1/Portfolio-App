@@ -9,5 +9,7 @@ import {MatDividerModule} from '@angular/material/divider';
   styleUrl: './footer.component.sass'
 })
 export class FooterComponent {
-
+  getYear(){
+    return new Date().getFullYear();
+  }
 }

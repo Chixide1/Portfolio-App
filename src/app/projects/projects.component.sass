@@ -2,16 +2,16 @@
 
 //Animations
 @keyframes float
-    0% 
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+    0%
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6)
         transform: translatey(0px)
 
     50%
-        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)
+        box-shadow: 0 25px 15px 0 rgba(0,0,0,0.2)
         transform: translatey(-20px)
 
-    100% 
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+    100%
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6)
         transform: translatey(0px)
 
 //Main
@@ -24,6 +24,7 @@
         margin-top: 2rem
         display: flex
         gap: 1rem
+        min-height: 400px
 
     &__content
         min-width: 50%
@@ -37,7 +38,7 @@
 
     &__tag-group
         margin-top: 7.5px
-    
+
     &__tag
         margin: 0
         padding: 0 10px 0 0
@@ -53,7 +54,7 @@
         display: flex
         justify-content: flex-start
         gap: 20px
-    
+
     &__link
         width: fit-content
         display: inline
@@ -72,14 +73,16 @@
         display: block
         padding: 20px
         margin-inline: auto
-        
+
     &__img
         align-self: center
+        height: auto
+        width: 100%
         display: block
         min-width: 150px
         border-radius: 30px
         border: 1px solid $tertiary-color
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6)
         animation: float 10s ease-in-out infinite
 
 @media (width <= $breakpoint)
@@ -88,11 +91,11 @@
         &__details
             flex-direction: column
             gap: 4rem
-        
+
         &__content
             max-width: 100%
-        
+
         &__img-box
             width: 80%
             max-width: 80%
-	
+

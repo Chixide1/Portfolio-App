@@ -1,5 +1,15 @@
 [
     {
+        "name": "ZenWealth",
+        "description": "ZenWealth is a personal finance app that connects to banks via Plaid, allowing users to track expenses, manage budgets, and analyze spending patterns. Built with ASP.NET Core and React, it features account management, transaction history, visual budget tracking, and spending analytics to help users gain comprehensive insights into their financial health.",
+        "img": "assets/images/zenwealth.png",
+        "github": "https://github.com/Chixide1/ZenWealth",
+        "live": null,
+        "tags": [
+          "Typescript", "React", "C#", "Asp.Net Core", "SQL Server", "Tailwind CSS", "Shadcn"
+        ]
+    },
+    {
         "name": "Techtonic",
         "description": "This blog application was inspired by the Prismic Blog and developed primarily to learn Next.js while creating a practical and functional project. I populated it with mock data to showcase its features.",
         "img": "assets/images/blog.png",
@@ -16,7 +26,7 @@
         "github": "https://github.com/Chixide1/Cloudstore",
         "live": "https://cloudstore.ckdoestech.com",
         "tags": [
-            "Python" ,"Django", "Sass", "Htmx", "Bootstrap", "Hyperscript"
+          "Python" ,"Django", "Sass", "Htmx", "Bootstrap", "Hyperscript"
         ]
     },
     {
@@ -24,9 +34,9 @@
         "description": "The website you are currently on! My portfolio showcases my coding projects and the technologies I have utilised. It also highlights some of my skills and experience.",
         "img": "assets/images/portfolio-app.png",
         "github": "https://github.com/Chixide1/Portfolio-App",
-        "live": "",
+        "live": null,
         "tags": [
-            "Typescript", "Angular", "Sass", "Javascript", "Angular Material"
+          "Typescript", "Angular", "Sass", "Javascript", "Angular Material"
         ]
     }
 ]
