@@ -1,10 +1,10 @@
 [
     {
         "name": "ZenWealth",
-        "description": "ZenWealth is a personal finance app that connects to banks via Plaid, allowing users to track expenses, manage budgets, and analyze spending patterns. Built with ASP.NET Core and React, it features account management, transaction history, visual budget tracking, and spending analytics to help users gain comprehensive insights into their financial health.",
+        "description": "ZenWealth is a personal finance app that connects to banks via Plaid, allowing users to track expenses, manage budgets, and analyze spending patterns. Built with ASP.NET Core and React, it features account management, transaction history, visual budget tracking, and spending analytics to help users gain comprehensive insights into their financial health. The linked app uses test data.",
         "img": "assets/images/zenwealth.png",
         "github": "https://github.com/Chixide1/ZenWealth",
-        "live": null,
+        "live": "https://zenwealth.ckdoestech.com/",
         "tags": [
           "Typescript", "React", "C#", "Asp.Net Core", "SQL Server", "Tailwind CSS", "Shadcn"
         ]
